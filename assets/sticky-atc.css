@@ -1,0 +1,76 @@
+
+
+
+.sticky-atc-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sticky-atc-bar__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sticky-atc-bar__price {
+  font-size: 16px;
+}
+
+.sticky-atc-bar__price--original {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.sticky-atc-bar__price--sale {
+  color: #333;
+}
+
+.sticky-atc-bar__variant-selector {
+  margin: 0 10px;
+}
+
+.sticky-atc-bar__add-to-cart {
+  background-color: #fa3a47;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sticky-atc-bar__add-to-cart:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.sticky-atc-bar__inventory-badge {
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sticky-atc-bar__inventory-badge--in-stock {
+  background-color: #4caf50;
+}
+
+.sticky-atc-bar__inventory-badge--low-stock {
+  background-color: #ff9800;
+}
+
+.sticky-atc-bar__inventory-badge--sold-out {
+  background-color: #f44336;
+}
+
+.sticky-atc-bar__free-shipping {
+  font-size: 14px;
+}
+
+
