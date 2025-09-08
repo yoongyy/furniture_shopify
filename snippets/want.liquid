@@ -1,0 +1,19 @@
+
+<!-- START Want Button Code for Shopify Platform Rev.2012-06-25 -->
+<script>
+(function() {
+        var _w = document.createElement("script"); _w.type = "text/javascript"; _w.async = true;
+        _w.src = "http://button.wanttt.com/button/script/";
+        var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(_w, s);
+})();
+</script>
+<a href="http://wanttt.com/want/initial_popup/"
+data-merchant_name="{{ shop.name | escape }}"
+data-title="{{ product.title }}"
+data-price="{{ product.price | money }}"
+data-image_url="{{ product.images[0] | product_img_url: "large"  |replace: '?', '%3F' | replace: '&','%26'}}"
+data-count="false"
+data-style="wb1"
+data-page_source="product"
+class="wantButton"></a>
+<!-- END   Want Button Code for Shopify Platform -->
